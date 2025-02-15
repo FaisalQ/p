@@ -582,12 +582,17 @@ const arabicModalContent = `
       navigator.clipboard.writeText("https://redirto.link/s/l-9420412").then(() => {
         const btn = document.getElementById("copyLinkBtn");
         const originalHTML = btn.innerHTML;
-        btn.innerHTML = '<i class="bi bi-check-lg"></i> Copied!';
+        if (currentLanguage == "en") {
+        btn.innerHTML = '<i class="bi bi-check-lg"></i> Copied!'; 
+        }
+        else {
+        btn.innerHTML = '<i class="bi bi-check-lg"></i> تم النسخ!';
+        }
         btn.style.backgroundColor = "green";
         setTimeout(() => {
           btn.innerHTML = originalHTML;
           btn.style.backgroundColor = "#6c757d";
-        }, 2000);
+        }, 2500);
       });
     });
   </script>
