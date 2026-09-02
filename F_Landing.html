@@ -9,9 +9,9 @@
   <meta name="bingbot" content="noindex, nofollow, noarchive, nosnippet, noimageindex" />
   <meta name="referrer" content="no-referrer" />
   <title>Faisal Al Quwaitae | IT Support & System Administration</title>
-  <meta http-equiv="Cache-Control" content="no-store, no-cache, must-revalidate, max-age=0" />
-  <meta http-equiv="Pragma" content="no-cache" />
-  <meta http-equiv="Expires" content="0" />
+  <meta name="description" content="Faisal Al Quwaitae is an Abu Dhabi-based IT support professional with experience in system administration, Microsoft 365, networking, POS, CCTV, endpoint support, and web development." />
+  <meta name="theme-color" content="#0b1220" />
+  <meta name="color-scheme" content="dark" />
 
   <!-- Bootstrap + Icons -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
@@ -28,8 +28,6 @@
       --muted: #aab6cc;
       --primary: #4f9cff;
       --primary-2: #73e0c2;
-      --danger: #ff6b8a;
-      --warning: #ffd166;
       --radius: 22px;
       --shadow: 0 24px 70px rgba(0, 0, 0, 0.28);
     }
@@ -49,6 +47,12 @@
     }
 
     a { color: inherit; text-decoration: none; }
+
+    a:focus-visible,
+    button:focus-visible {
+      outline: 3px solid rgba(115, 224, 194, 0.75);
+      outline-offset: 3px;
+    }
 
     .navbar {
       background: rgba(8, 16, 31, 0.75);
@@ -116,7 +120,7 @@
     .hero h1 {
       font-size: clamp(2.4rem, 5vw, 5rem);
       line-height: 0.95;
-      font-weight: 850;
+      font-weight: 800;
       letter-spacing: -0.06em;
       margin: 18px 0;
     }
@@ -232,11 +236,14 @@
       font-size: 0.9rem;
     }
 
-    section { padding: 70px 0; }
+    section {
+      padding: 70px 0;
+      scroll-margin-top: 78px;
+    }
 
     .section-title {
       font-size: clamp(2rem, 4vw, 3rem);
-      font-weight: 850;
+      font-weight: 800;
       letter-spacing: -0.045em;
       margin-bottom: 12px;
     }
@@ -416,11 +423,78 @@
       .timeline { padding-left: 20px; }
       .timeline-item::before { left: -27px; }
     }
+
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+      *, *::before, *::after {
+        transition-duration: 0.01ms !important;
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+      }
+    }
+
+    @media print {
+      body {
+        background: #fff !important;
+        color: #111 !important;
+      }
+
+      .navbar,
+      .hero .btn,
+      footer {
+        display: none !important;
+      }
+
+      .hero { padding: 0 0 24px; }
+      section { padding: 24px 0; }
+
+      .hero-card,
+      .glass-card,
+      .timeline-item,
+      .skill-group,
+      .project-card,
+      .contact-card,
+      .stat-card,
+      .quick-item {
+        background: #fff !important;
+        border: 1px solid #d9d9d9 !important;
+        box-shadow: none !important;
+        backdrop-filter: none !important;
+      }
+
+      .gradient-text {
+        background: none !important;
+        color: #111 !important;
+      }
+
+      .lead,
+      .section-subtitle,
+      .date-place,
+      .quick-item,
+      .stat-card span,
+      .project-card p,
+      .timeline-item ul,
+      .cert-list {
+        color: #333 !important;
+      }
+
+      .skill-chip,
+      .tag,
+      .eyebrow {
+        background: #fff !important;
+        color: #111 !important;
+        border-color: #bbb !important;
+      }
+
+      .timeline::before { background: #aaa !important; }
+      .timeline-item::before { box-shadow: none !important; }
+      a { color: #111 !important; }
+    }
   </style>
 </head>
 
 <body>
-  <nav class="navbar navbar-expand-lg fixed-top">
+  <nav class="navbar navbar-expand-lg fixed-top" data-bs-theme="dark" aria-label="Primary navigation">
     <div class="container">
       <a class="navbar-brand fw-bold" href="#top">Faisal Al Quwaitae</a>
       <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu" aria-controls="navMenu" aria-expanded="false" aria-label="Toggle navigation">
@@ -443,10 +517,10 @@
       <div class="container">
         <div class="row align-items-center g-4">
           <div class="col-lg-7">
-            <span class="eyebrow"><i class="bi bi-lightning-charge-fill"></i> IT Support • System Administration • Digital Tools</span>
+            <span class="eyebrow"><i class="bi bi-lightning-charge-fill"></i> IT Support • System Administration • Microsoft 365</span>
             <h1><span class="gradient-text">IT Support</span><br />& System Administration</h1>
             <p class="lead">
-              IT professional based in Abu Dhabi with hands-on experience in technical support, system administration, Microsoft 365 tools, user onboarding, device setup, networking, printers, CCTV access, POS support, and website development.
+              UAE National IT professional based in Abu Dhabi with 9+ years of experience supporting users, devices, and business systems across Microsoft 365, Windows endpoints, networking, printers, CCTV, POS environments, and web platforms.
             </p>
             <div class="d-flex flex-wrap gap-2 mt-4">
               <a href="mailto:fms_q@outlook.com" class="btn btn-glow btn-lg rounded-pill px-4"><i class="bi bi-envelope me-2"></i>Email Me</a>
@@ -458,7 +532,7 @@
           <div class="col-lg-5">
             <div class="hero-card p-4 p-lg-5">
               <div class="d-flex align-items-center gap-3 mb-4">
-                <img src="data:image/png;base64,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" alt="Faisal Logo" style="width:72px;height:72px;border-radius:20px;object-fit:contain;padding:6px;background:rgba(255,255,255,0.04);box-shadow:0 12px 30px rgba(0,0,0,0.35);border:1px solid rgba(255,255,255,0.12);" />
+                <img width="72" height="72" decoding="async" src="data:image/png;base64,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" alt="Faisal Al Quwaitae" style="width:72px;height:72px;border-radius:20px;object-fit:contain;padding:6px;background:rgba(255,255,255,0.04);box-shadow:0 12px 30px rgba(0,0,0,0.35);border:1px solid rgba(255,255,255,0.12);" />
                 <div>
                   <h2 class="h4 mb-1 fw-bold">Faisal Al Quwaitae</h2>
                   <p class="mb-0 text-secondary-emphasis" style="color: var(--muted)!important;">Administrator – IT Support</p>
@@ -468,15 +542,15 @@
               <div class="quick-info mb-4">
                 <div class="quick-item"><i class="bi bi-geo-alt-fill"></i> Abu Dhabi, UAE</div>
                 <div class="quick-item uae-badge"><i class="bi bi-flag-fill"></i><span>UAE National</span></div>
-                <div class="quick-item"><i class="bi bi-briefcase-fill"></i> Available Immediately</div>
+                <div class="quick-item"><i class="bi bi-microsoft"></i> Microsoft 365 & Windows</div>
                 <div class="quick-item"><i class="bi bi-translate"></i> Arabic & English</div>
               </div>
 
               <div class="row g-3">
                 <div class="col-6"><div class="stat-card"><strong>9+</strong><span>Years IT Experience</span></div></div>
-                <div class="col-6"><div class="stat-card"><strong>M365</strong><span>Workplace Tools Support</span></div></div>
-                <div class="col-6"><div class="stat-card"><strong>365</strong><span>Microsoft 365 Support</span></div></div>
-                <div class="col-6"><div class="stat-card"><strong>Multi</strong><span>Site IT Support</span></div></div>
+                <div class="col-6"><div class="stat-card"><strong>Multi-site</strong><span>End-user IT Support</span></div></div>
+                <div class="col-6"><div class="stat-card"><strong>M365</strong><span>Workplace Support</span></div></div>
+                <div class="col-6"><div class="stat-card"><strong>Web</strong><span>WordPress & Front-end</span></div></div>
               </div>
             </div>
           </div>
@@ -487,7 +561,7 @@
     <section id="experience">
       <div class="container">
         <h2 class="section-title">Experience</h2>
-        <p class="section-subtitle">Real-world IT work: tickets, devices, users, branches, printers, POS, networks, Microsoft 365, and all the little gremlins that appear five minutes before closing time.</p>
+        <p class="section-subtitle">Hands-on support across end-user devices, Microsoft 365, networking, printers, POS systems, CCTV, business applications, and branch operations.</p>
 
         <div class="timeline">
           <div class="timeline-item">
@@ -495,13 +569,13 @@
             <div class="company">Lindenberg Emirates L.L.C</div>
             <div class="date-place"><i class="bi bi-calendar3 me-1"></i> Oct 2025 – Present <span class="mx-2">•</span> Abu Dhabi, United Arab Emirates</div>
             <ul>
-              <li>Provide daily end-user IT support and resolve requests through Freshservice.</li>
-              <li>Troubleshoot laptops, software, email, printers, CCTV access, POS printers, and general connectivity issues.</li>
-              <li>Set up new devices, transfer user data, and configure Outlook, Teams, SharePoint, OneDrive, and core business applications.</li>
-              <li>Support onboarding, account setup, password resets, system access requests, and user profile configuration.</li>
-              <li>Conduct on-site branch visits for internet connectivity, POS systems, CCTV playback, and biometric device issues.</li>
-              <li>Maintain IT assets, monitor device health, and document technical requests for accurate tracking and timely resolution.</li>
-              <li>Identify recurring incidents and recommend practical improvements to reduce repeated issues.</li>
+              <li>Resolve daily incidents and service requests through Freshservice for office and branch users.</li>
+              <li>Troubleshoot Windows laptops, Microsoft 365, email, printers and scanners, CCTV access, POS peripherals, and connectivity issues.</li>
+              <li>Configure new devices and user profiles, transfer data, and set up Outlook, Teams, SharePoint, OneDrive, and business applications.</li>
+              <li>Support user onboarding, account setup, password resets, access requests, and profile configuration.</li>
+              <li>Provide on-site support for internet connectivity, POS systems, CCTV playback, and biometric devices.</li>
+              <li>Maintain IT asset records, monitor device health, and document requests and resolutions for accurate tracking.</li>
+              <li>Identify recurring incidents and recommend practical fixes to reduce repeat issues.</li>
             </ul>
           </div>
 
@@ -547,7 +621,7 @@
     <section id="skills">
       <div class="container">
         <h2 class="section-title">Skills</h2>
-        <p class="section-subtitle">The old button-like skills are upgraded into cleaner interactive chips and grouped cards, so it looks modern instead of “2009 website with trust issues.”</p>
+        <p class="section-subtitle">Core technical skills used in day-to-day support, system administration, infrastructure, and web work.</p>
 
         <div class="row g-4">
           <div class="col-lg-6">
@@ -620,48 +694,48 @@
     <section id="projects">
       <div class="container">
         <h2 class="section-title">Projects & Practical Work</h2>
-        <p class="section-subtitle">A selection of work areas from infrastructure, support, web development, reporting, and systems implementation.</p>
+        <p class="section-subtitle">Selected areas of practical experience across infrastructure, support, web development, security, reporting, and business systems.</p>
 
         <div class="row g-4">
           <div class="col-md-6 col-lg-4">
             <div class="project-card">
-              <h3>IT Infrastructure Setup</h3>
-              <p>Supported upgrades including server installation, network configuration, system updates, and reliability improvements.</p>
+              <h3>Infrastructure & Network Support</h3>
+              <p>Supported server and network setup, system updates, endpoint deployment, and reliability improvements across business environments.</p>
               <span class="tag">Infrastructure</span><span class="tag">Servers</span><span class="tag">Network</span>
             </div>
           </div>
           <div class="col-md-6 col-lg-4">
             <div class="project-card">
-              <h3>IT Support & User Training</h3>
-              <p>Resolved technical issues, guided users, improved productivity, and supported day-to-day business operations.</p>
+              <h3>End-user Support & Training</h3>
+              <p>Resolved technical issues, guided users through systems and tools, and supported day-to-day business operations.</p>
               <span class="tag">Helpdesk</span><span class="tag">Training</span><span class="tag">Support</span>
             </div>
           </div>
           <div class="col-md-6 col-lg-4">
             <div class="project-card">
-              <h3>Website Development</h3>
-              <p>Built and optimized websites with WordPress, custom styling, SEO improvements, and responsive design.</p>
+              <h3>Website Development & Maintenance</h3>
+              <p>Built and maintained WordPress websites with custom styling, responsive layouts, performance improvements, and SEO work.</p>
               <span class="tag">WordPress</span><span class="tag">SEO</span><span class="tag">Performance</span>
             </div>
           </div>
           <div class="col-md-6 col-lg-4">
             <div class="project-card">
-              <h3>Network Security Enhancement</h3>
-              <p>Assisted with audits, firewall configuration, antivirus protection, and general IT compliance practices.</p>
+              <h3>Network & Endpoint Security</h3>
+              <p>Supported firewall configuration, antivirus protection, access controls, security reviews, and general IT compliance practices.</p>
               <span class="tag">Security</span><span class="tag">Firewall</span><span class="tag">Compliance</span>
             </div>
           </div>
           <div class="col-md-6 col-lg-4">
             <div class="project-card">
-              <h3>CRM / ERP Support</h3>
-              <p>Supported installation, configuration, vendor coordination, workflow improvements, and user training.</p>
+              <h3>Business Application Support</h3>
+              <p>Supported CRM and ERP installation, configuration, vendor coordination, workflow improvements, and user guidance.</p>
               <span class="tag">CRM</span><span class="tag">ERP</span><span class="tag">Workflow</span>
             </div>
           </div>
           <div class="col-md-6 col-lg-4">
             <div class="project-card">
-              <h3>Printer Cost Control</h3>
-              <p>Implemented usage logging concepts to track print activity, reduce waste, and improve IT asset control.</p>
+              <h3>Print & Asset Cost Control</h3>
+              <p>Applied print-usage tracking and asset-control practices to improve visibility, reduce waste, and support cost management.</p>
               <span class="tag">Print Management</span><span class="tag">Cost Control</span><span class="tag">Assets</span>
             </div>
           </div>
@@ -673,9 +747,9 @@
       <div class="container">
         <div class="glass-card p-4 p-lg-5">
           <h2 class="section-title">Certifications</h2>
-          <p class="section-subtitle">A cleaned-up list of key certifications without turning the page into a certificate museum. Fancy, but not sleepy.</p>
+          <p class="section-subtitle">Selected certifications and professional training relevant to IT support, systems, databases, data analysis, and risk management.</p>
           <ul class="cert-list">
-            <li>Google IT Professional Support Certificate</li>
+            <li>Google IT Support Professional Certificate</li>
             <li>Technical Support Fundamentals</li>
             <li>The Bits and Bytes of Computer Networking</li>
             <li>System Administration and IT Infrastructure Services</li>
@@ -702,7 +776,7 @@
           <div class="row align-items-center g-4">
             <div class="col-lg-8">
               <h2 class="section-title mb-2">Let’s connect</h2>
-              <p class="section-subtitle mb-0">For IT support, system administration, technical coordination, or website-related work, reach out directly.</p>
+              <p class="section-subtitle mb-0">For IT support, system administration, technical coordination, or web development opportunities, contact me directly.</p>
             </div>
             <div class="col-lg-4 text-lg-end">
               <a href="mailto:fms_q@outlook.com" class="btn btn-glow btn-lg rounded-pill px-4 mb-2"><i class="bi bi-envelope me-2"></i>fms_q@outlook.com</a><br />
@@ -717,7 +791,7 @@
   <footer>
     <div class="container d-flex flex-column flex-md-row justify-content-between gap-2">
       <span>© <span id="year"></span> Faisal Al Quwaitae. All rights reserved.</span>
-      <span>Built with HTML, Bootstrap, and a tiny amount of karak.</span>
+      <span>Abu Dhabi, United Arab Emirates</span>
     </div>
   </footer>
 
